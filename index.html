@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Selamat Ulang Tahun</title>
+  <meta name="theme-color" content="#d6e8fa">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+  <div id="loader"><span>♥</span></div>
+  <div id="petals" aria-hidden="true"></div>
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div id="glow" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <nav id="dots" aria-label="Kemajuan"></nav>
+    <div class="music" id="music">
+      <button id="musicBtn" aria-label="Putar atau jeda musik" title="Musik"><span
+          class="bars"><i></i><i></i><i></i></span></button>
+      <input id="vol" type="range" min="0" max="1" step="0.05" value="0.5" aria-label="Volume">
+    </div>
+  </header>
+  <div id="toast" role="status"></div>
+
+  <main>
+    <!-- 1 Opening -->
+    <section class="page p1" id="p1">
+      <div class="wrap">
+        <p class="eyebrow" id="o-eyebrow"></p>
+        <h1 id="o-title"></h1>
+        <p class="sub" id="o-sub"></p>
+        <div id="o-env"></div>
+        <div class="row">
+          <button class="btn" id="openBtn">Buka</button>
+          <button class="btn ghost" id="musicOpt">♫ Play Music</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 Letter -->
+    <section class="page p2" id="p2">
+      <div class="wrap slot"></div>
+    </section>
+    <!-- 3 Memories -->
+    <section class="page p3" id="p3">
+      <div class="wrap slot"></div>
+    </section>
+   
+    <!-- 5 Cake -->
+    <section class="page p4" id="p4">
+      <div class="wrap slot"></div>
+    </section>
+    <!-- 6 Future -->
+    <section class="page p5" id="p5">
+      <div class="sky" id="sky" aria-hidden="true"></div>
+      <div class="wrap slot"></div>
+    </section>
+    <!-- 7 Final -->
+    <section class="page p6" id="p6">
+      <div class="wrap slot"></div>
+    </section>
+  </main>
+
+  <div id="lightbox" hidden>
+    <button class="lb-x" aria-label="Tutup">×</button>
+    <button class="lb-n prev" aria-label="Sebelumnya">‹</button>
+    <figure>
+      <div id="lb-ph"></div>
+      <figcaption id="lb-cap"></figcaption>
+    </figure>
+    <button class="lb-n next" aria-label="Berikutnya">›</button>
+  </div>
+
+  <script src="./js/config.js" defer></script>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/navigation.js" defer></script>
+  <script src="./js/music.js" defer></script>
+  <script src="./js/interactions.js" defer></script>
+</body>
+
+</html>

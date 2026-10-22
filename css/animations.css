@@ -1,0 +1,20 @@
+@keyframes beat{50%{transform:scale(1.25)}}
+@keyframes eq{50%{height:14px}}
+@keyframes fall{to{transform:translate(60px,110vh) rotate(360deg)}}
+@keyframes twinkle{50%{opacity:.2;transform:scale(.6)}}
+@keyframes flick{from{transform:translateX(-50%) scaleY(.92) rotate(-2deg)}to{transform:translateX(-50%) scaleY(1.08) rotate(2deg)}}
+@keyframes bob{50%{transform:translateY(-8px)}}
+@keyframes burst{to{box-shadow:0 0 0 70vmax rgba(255,255,255,0);opacity:0;transform:scale(6)}}
+@keyframes floatup{from{transform:translate(0,0) scale(var(--s,1));opacity:1}to{transform:translate(var(--dx,0),-120px) scale(var(--s,1));opacity:0}}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.rise{animation:rise 1.2s both}
+/* Judul pembuka: satu momen berurutan */
+.p1.active .eyebrow{animation:rise 1.2s .3s both}
+.p1.active h1{animation:rise 1.4s 1s both}
+.p1.active .sub{animation:rise 1.4s 1.9s both}
+.p1.active .env,.p1.active .row{animation:rise 1.2s 2.7s both}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  #petals{display:none}
+  .fline{opacity:1;transform:none}
+}

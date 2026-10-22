@@ -1,0 +1,10 @@
+@media (min-width:700px){
+  .wrap{padding-top:6rem}
+  .polaroids{grid-template-columns:repeat(3,1fr);max-width:960px;gap:2rem}.polaroid b{font-size:1.1rem}
+  .cards{grid-template-columns:repeat(4,1fr);max-width:880px}
+  .paper{padding:2.6rem 3rem}
+  .fline{font-size:1.9rem}
+  .reveal p{font-size:1.45rem}
+}
+@media (max-width:360px){#vol{display:none}.btn{padding:.8rem 1.3rem}}
+@media (max-height:520px) and (orientation:landscape){.wrap{padding-top:4.5rem}.cake{transform:scale(.8)}}
